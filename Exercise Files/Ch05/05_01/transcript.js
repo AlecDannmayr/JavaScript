@@ -9,7 +9,7 @@ for (var i = 0; i < 10; i += 1) {
 // https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Statements/for
 
 // Webpage forloop!
-
+// shows all pages
 
 var pageNames = [
   "home",
@@ -23,8 +23,28 @@ var pageNames = [
   for (i = 0; i < pageNames.length; i += 1) {
   if (document.title === pageNames[i]) {
   console.log("We ARE here: " + pageNames[i]);
-break;
   } else {
 console.log("We are not here: " + pageNames[i]);
   }
   }
+
+  // shows upto correct page
+
+  var pageNames = [
+    "home",
+    "About Us",
+    "Contact Us",
+    "JavaScript Playground",
+    "News",
+    "Blog"
+    ];
+    
+    for (i = 0; i < pageNames.length; i += 1) {
+    if (document.title === pageNames[i]) {
+    console.log("We ARE here: " + pageNames[i]);
+break;
+    } else {
+  console.log("We are not here: " + pageNames[i]);
+    }
+    }
+  
