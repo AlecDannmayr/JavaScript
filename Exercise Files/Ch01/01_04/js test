@@ -248,3 +248,17 @@ animal === "cat"
 document.getElementById("projectSelectors").addEventListener('click', function()) {
     document.getElementById("").innerHTML = "Hello World";
 }
+
+
+
+// type Checking
+
+// type of, shows type of string.
+
+var thing = "Hello";
+typeof thing;
+
+
+thing = [];
+
+typeof thing === "object" && thing.hasOwnProperty('length')
