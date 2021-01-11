@@ -174,6 +174,38 @@ frf
 
 
 function isEven(num) { // declars function isEven(names num)
-  if (num % 2 === 0) { // if number is devided by to, does what remains = 0
+  if (num % 2 === 0) { // if number is devided by two, does what remains = 0
   return true; } else { return false; // if equal to 0 return true, if not return false
-                    }}
+   }}
+
+
+
+   // change text
+
+
+   fuddify("Com here you rabbit");
+
+function fuddify(speech) {
+if (typeof speech !== "string") {
+console.error("nice, twy, wabbit!");
+return;
+}
+}
+
+
+// detect data type and check if string, return if true, then replace letters.
+
+fuddify("Come here you horrible rabbit, I'm going to get you and make some rabbit soup"); // declair a argument
+
+function fuddify(speech) { 
+if (typeof speech !== "string") {
+console.error("nice, twy, wabbit!");
+return;
+}
+
+speech = speech.replace(/r/g, "w");
+speech = speech.replace(/R/g, "w");
+
+return speech;
+
+}
