@@ -121,8 +121,23 @@ i += 1;
 
 //
 
-while (myItem === true) {
+while (myItem !== true) {
   console.log("myArray has : " + myArray.length + "items now. This loop will go until we pop a false."
   );
   myItem = myArray.pop();
   } 
+
+
+  //keeps popping an item out of the myArray and into myItem util its false. looping until get's to a false on the end
+
+  var myArray = [false, true, true, true, true, false];
+
+var myItem = null;
+while (myItem !== true) {
+console.log(
+"myArray has " + 
+myArray.length +
+" items now. This loop will go until we pop false."
+);
+myItem = myArray.pop();
+}
