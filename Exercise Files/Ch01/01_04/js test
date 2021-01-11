@@ -201,6 +201,28 @@ switch (answer) {
 }
 
 
+// Multi statment
+
+var whatWeWantFroChristmas = "Fish";
+var whatWeGotForChristmas = "Puppy";
+
+if (whatWeWantFroChristmas === whatWeGotForChristmas) {
+    console.log("Yah, I love it!");
+}
+else {
+    console.log("oh no, not good I got a cat")
+    var notSoGood = true;
+}
+
+if (notSoGood) {
+    console.log("Ahhh, maybe next year")
+}
+
+if (!notSoGood) {
+    console.log("Wooowhooo!")
+}
+
+
 
 
 
