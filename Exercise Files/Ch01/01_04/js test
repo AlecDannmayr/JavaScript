@@ -1,0 +1,179 @@
+var string1 = "625386213";
+var string2 = "76391234";
+var string3 = "hello";
+var string4 = "Hello";
+var string5 = "87364123 Hello";
+
+var regex = /Hello/;
+
+console.log(regex.test(string1));
+console.log(regex.test(string2));
+console.log(regex.test(string3));
+console.log(regex.test(string4));
+console.log(regex.test(string5));
+
+JavaScript
+
+Method
+
+.Length
+.toUpperCase
+.toLowerCase
+Math.(what type of math calculation)
+=== (Exactly the same)
+
+Objects - a box of useful folders {}
+
+
+var fiat = {
+... horsePower: 95,
+... doors: 5,
+... seats: 5,
+... driversSide: "right",
+... wheels: 4,
+... color: "White",
+... speed: 103,
+... speedunit: "mph",
+... }
+
+
+// > fiat.speedunit
+// Mph
+
+// (Different retrieval syntax)
+
+// fiat["doors"]
+5
+
+// Add to Object
+
+fiat.insideColor = "black"
+'black'
+
+// Delete
+
+//Array
+
+myArray = [0,10,20,343,2,234,'string1', 'string2', true, false]
+
+// Array can contain objects!
+// Object in an array and array in an array;
+
+myArray
+[ { name: 'value' }, [ 1, 2, 3 ], true, 'nifty' ]
+
+// Add to the end of an array; 
+
+// myArray[myArray.length] = "Yaz" (adds to end) or can;
+
+// MyArray[3] = “Yaz” to add to a certain position.
+
+// MyArray.push(“Awesome”) (Adds to end)
+
+// .pop (removed last item)!
+// .push - adds to last item
+// .pop removed from last item!
+// Delete just takes away value
+// Split removed field
+// .push - Adds to end
+// .pop - removed from end
+// .splice - removed value but not and field
+// .delete - removed value not field
+
+
+// Splice 
+
+// Splice will slice parts of the array off,
+
+// myArray.splice(0) will delete everything after the 1st field of data
+// myArray.splice(2,1) will delete the 3rd field of data 
+// myArray.splice(2,2) will delete the 3rd field of data and 1 after (3rd and 4th)
+
+// Comment
+
+//
+/* 
+*/
+
+// Regular expressions!
+
+// Test method
+
+// (Add I flag case insensitive)
+// ^ look for cap at start of string!
+// $ at end looks to see if caps appear at the end!
+
+
+var string1 = "625386213";
+var string2 = "76391234";
+var string3 = "hello";
+var string4 = "Hello";
+var string5 = "87364123 Hello";
+
+var regex = /ever\.$/I;
+
+console.log(regex.test(string1));
+console.log(regex.test(string2));
+console.log(regex.test(string3));
+console.log(regex.test(string4));
+console.log(regex.test(string5));
+
+// Simple comparisons
+
+// === (strict operator)
+// !== (strict inequality)
+
+// == (not as strict equality)
+// != (Converts data types and numbers)
+
+// <= less that or equal to.
+// >= great or equal to.
+
+
+// Arithmetic operators
+
+// % modules operator
+// 20% will return 0 (as none left over)
+
+// += edition assignment
+
+// Logical operators
+
+// And - &&
+// Or - ||
+// ! - not expresion (turns expression the other way)
+
+// Controll structure
+// If statment
+
+var answer = window.confirm("Click Ok, get true. Click cancel, get false.");
+
+if (answer === true) {
+console.log("you said true!");
+}
+else { console.log ("You said false"); }
+
+// Window.prompt — asks the user to add info into prompt field and return an answer.
+// If statment (Watch out for odd quotes)
+
+
+var answer = window.prompt("type Yes, No or Maybe. then click ok.");
+if (answer === "Yes") {
+console.log("You Said Yes!");
+}
+else if (answer === "Maybe") {
+console.log("you said maybe. I don't know what to make of that!");
+}
+else if (answer === "No") {
+console.log("you said no.");
+            } else {
+console.log("you rebel you");
+}
+
+
+// If - if
+// Else If - if not if
+// Else - if not if or else if
+
+// Switch statement instead of elseif
+
