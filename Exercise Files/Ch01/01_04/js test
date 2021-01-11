@@ -222,7 +222,25 @@ if (!notSoGood) {
     console.log("Wooowhooo!")
 }
 
+// ternery operator/conditional operator
 
+
+
+
+// getElementById
+// getElementByClass
+// window.prompt
+// alert
+// addEventListener()
+
+//ternary operator
+
+
+var animal = "cat";
+
+animal === "cat"
+? console.log("Animal is a cat") // ? if statment is true
+: console.log("Animal is not a cat") // : if statment is false
 
 
 
