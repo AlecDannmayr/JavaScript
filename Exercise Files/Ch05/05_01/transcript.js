@@ -88,7 +88,7 @@ var pageNames = [
 ];
 
 
-// Other way
+// Other way (Not used very often, but good to know if it comes up in someones code)
 
 for (var i in pageNames) {
   if (pageNames.hasOwnProperty(i)) {
@@ -104,3 +104,25 @@ for (var i in pageNames) {
   "News",
   "Blog"
   ];
+
+// while loop, the below does the same as a for loop (as shown below)
+
+for (i = 0; i < 10; i++) {
+  console.log(i + "... this will go until we hit 10")
+}
+
+//
+
+var i = 0;
+while (i < 10) {
+console.log(i + "... this will go until we hit 10");
+i += 1;
+}
+
+//
+
+while (myItem === true) {
+  console.log("myArray has : " + myArray.length + "items now. This loop will go until we pop a false."
+  );
+  myItem = myArray.pop();
+  } 
