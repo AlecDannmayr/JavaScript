@@ -213,5 +213,7 @@ return speech;
 // More Arguments
 
 function // function
-anArgument // Argument
-(parameter1, Parameter2) // Parameters
+anArgument // functionName
+(parameter1, Parameter2) // Arguments
+
+anArgument("A string Parameter", "Another string Parameter"); // parameter
