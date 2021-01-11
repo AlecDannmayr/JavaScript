@@ -130,6 +130,9 @@ while (myItem !== true) {
 
   //keeps popping an item out of the myArray and into myItem util its false. looping until get's to a false on the end
 // while loops are good when you don't know the content you will loop over, however if it's an infinet amount, it could loop infenetly
+
+// do loops, ensure the code is executed atleast onces before the condition is checked and a while loop takes over;
+
   var myArray = [false, true, true, true, true, false];
 
 var myItem = null;
@@ -143,7 +146,34 @@ myItem = myArray.pop();
 }
 
 
-// do loops, ensure the code is executed atleast onces before the condition is checked and a while loop takes over;
+// Functions move tedius parts of code, and only use one reuseable block of code!
 
 
 
+function speak() {
+  console.log('arf');
+  console.log('brf');
+  console.log('crf');
+  console.log('drf');
+  console.log('erf');
+  console.log('frf');
+  }
+
+speak() // returns;
+
+brf
+crf
+drf
+erf
+frf
+
+
+
+// Function arguments
+
+
+
+function isEven(num) { // declars function isEven(names num)
+  if (num % 2 === 0) { // if number is devided by to, does what remains = 0
+  return true; } else { return false; // if equal to 0 return true, if not return false
+                    }}
