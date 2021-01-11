@@ -175,5 +175,33 @@ console.log("you rebel you");
 // Else If - if not if
 // Else - if not if or else if
 
-// Switch statement instead of elseif
+// Switch statement
+
+var answer = window.prompt("Answer the Question");
+
+switch (answer) {
+    case "Yes":
+    console.log("You said Yes");
+    break;
+    case "No":
+    console.log("You said No");
+    break;
+}
+
+switch (answer) {
+    case "Yes":
+    console.log("You said Yes");
+    break;
+    case "No":
+    console.log("You said No");
+    break;
+    default: 
+    console.log("Please Enter a Value");
+    break;
+}
+
+
+
+
+
 
