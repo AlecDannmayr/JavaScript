@@ -69,3 +69,38 @@ break;
     console.log("We are not here: " + currentPageTitle);
     }
       }
+
+      //Enomarative for loop - create a for in loop, and adds a list number, easier then loop, 
+      // but doesn't guarantee 100% that the return of the items will be in number.
+
+
+  for (var i in pageNames) {
+console.log(i, pageNames[i]);
+}
+
+var pageNames = [
+"Home",
+"About Us",
+"Contact Us",
+"JavaScript Playground",
+"News",
+"Blog"
+];
+
+
+// Other way
+
+for (var i in pageNames) {
+  if (pageNames.hasOwnProperty(i)) {
+  console.log(i, pageNames[i]);
+  }
+  }
+  
+  var pageNames = [
+  "Home",
+  "About Us",
+  "Contact Us",
+  "JavaScript Playground",
+  "News",
+  "Blog"
+  ];
