@@ -209,3 +209,9 @@ speech = speech.replace(/R/g, "w");
 return speech;
 
 }
+
+// More Arguments
+
+function // function
+anArgument // Argument
+(parameter1, Parameter2) // Parameters
