@@ -245,3 +245,6 @@ animal === "cat"
 
 
 
+document.getElementById("projectSelectors").addEventListener('click', function()) {
+    document.getElementById("").innerHTML = "Hello World";
+}
