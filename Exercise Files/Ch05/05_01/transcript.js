@@ -129,7 +129,7 @@ while (myItem !== true) {
 
 
   //keeps popping an item out of the myArray and into myItem util its false. looping until get's to a false on the end
-
+// while loops are good when you don't know the content you will loop over, however if it's an infinet amount, it could loop infenetly
   var myArray = [false, true, true, true, true, false];
 
 var myItem = null;
@@ -141,3 +141,9 @@ myArray.length +
 );
 myItem = myArray.pop();
 }
+
+
+// do loops, ensure the code is executed atleast onces before the condition is checked and a while loop takes over;
+
+
+
