@@ -8,6 +8,13 @@
 <body>
 
 
+// .number() 
+.map()
+typeof
+.aurgument
+.arguments.length()
+
+
 
 <script>
 
@@ -123,7 +130,18 @@ console.log("Hello");
 
 obj.sayHello();
 
-// scope
+// .map() 
+// .map() takes a previous function as an argument (or a callback) and exicutes it and creates a new array.
+
+
+function doubleIt(number) {
+return (number *10);
+}
+
+var myNumber = [1,2,3,4,5];
+var doubleMyNumber = myNumber.map(doubleIt);
+
+/* scope
 
 // Scope - Where varibles are defined.
 // Global scope veribles are accessible anywhere.
@@ -139,6 +157,16 @@ obj.sayHello();
 //global in node = global
 // window = global else where
 // Let and const assisn to all blocks
+
+*/
+
+// Call back functions
+
+//The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+// map
+
+
 
 
 
