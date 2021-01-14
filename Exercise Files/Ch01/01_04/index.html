@@ -86,6 +86,46 @@ break;
 }
 }
 
+//types of functions 
+
+//Function expression
+
+function speakSomething(what) { 
+what = what || "Speaking!";
+
+for (i = 0; i < 100; i += 1) {
+console.log(what);
+}   
+    }
+speakSomething("Hellllllo")
+
+//Annonamous Function
+
+var SpeakSomethingElse = function(what) {
+what = what || "Speaking!";
+
+for (var i = 0; i < 10; i += 1) {
+console.log(what);
+}
+    };
+window.setTimeout(SpeakSomethingElse, 5000) 
+
+
+// Function as an object
+
+
+var obj = {
+sayHello: function() {
+console.log("Hello");
+}
+};
+
+
+obj.sayHello();
+
+//
+
+
 
 
 
