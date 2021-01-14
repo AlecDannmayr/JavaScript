@@ -11,6 +11,8 @@
 
 <script>
 
+// Add numbers together using the argument property
+
 var total = functionName(1,2,3,4,5, "Hello", "Hello2");
 
 function functionName() { 
@@ -20,9 +22,28 @@ for (i = 0; i < arguments.length; i++) {
 sum += arguments[i];
 }
 
-return sum;
+//
+
+
+
+
+function speakSomething(what, howMany) {
+what = (typeof what !== "undefined") ? what : "default speech"; 
+howMany = (typeof howMany !== "undefined") ? howMany : 10; 
+for (var i = 0; i < howMany; i += 1) {
+console.log(what + (" + i + "));
 }
-console.log(total);
+}
+
+
+speakSomething("Hey Hey", 5);
+speakSomething("Hey Hey");
+speakSomething();
+
+
+
+
+
 
 </script>
     
