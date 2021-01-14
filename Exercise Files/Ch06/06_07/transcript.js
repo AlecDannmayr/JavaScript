@@ -65,12 +65,12 @@ return total;
 
 function addingMachine() {  // creates function
   var total = 0; // initalise a verible 'total' with value of 0
-  
+       // varible i initialised equal to i, then for everytime arguments legnth is more then i incriment i by 1 
   for (var i = 0; i < arguments.length; i += 1) { // arguments property creates an array and looks for length of array
-  var number = arguments[i]; 
+  var number = arguments[i]; // verible 'number = argument number
   
-  if (typeof number === "number") {
-  total += number;
+  if (typeof number === "number") {  // if number == a numrical number
+  total += number; // add totle and number together
   }
   }
   
@@ -78,3 +78,9 @@ function addingMachine() {  // creates function
   }
   
   addingMachine(1,2,3);
+
+  function bottle () {
+    console.log(arguments[0]);
+  }
+
+bottle("string", 6);
