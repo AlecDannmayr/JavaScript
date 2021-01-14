@@ -25,7 +25,7 @@ sum += arguments[i];
 //
 
 
-
+// argument array like object
 
 function speakSomething(what, howMany) {
 what = (typeof what !== "undefined") ? what : "default speech"; 
@@ -34,13 +34,57 @@ for (var i = 0; i < howMany; i += 1) {
 console.log(what + (" + i + "));
 }
 }
-
-
 speakSomething("Hey Hey", 5);
-speakSomething("Hey Hey");
-speakSomething();
+
+// Math
+
+Math.random() // Creates random number between 0 > 1
+Math.floor // rounds down 
+
+// Objects referances and functions
 
 
+
+var calvin = {
+name: "Calvin",
+form: "human boy"
+};
+
+
+function transmogrifier(calvin) {
+if (typeof calvin !== "object") {
+console.error("Argument is of the wrong type");
+return;
+}
+    var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+switch (randomNumber) {
+    case 1:
+calvin.form = "tyrannosaurus";
+calvin.bestFriend = "Raptor";
+break;
+    case 2:
+calvin.form = "grey wolf";
+calvin.bestFriend = "Black Wolf";
+break;
+    case 3: 
+calvin.form = "bengal tiger";
+calvin.bestFriend = "Black Tiger";
+break;
+    case 4:
+calvin.form = "grizzly bear";
+calvin.bestFriend = "Black bear";
+break;
+    case 5:
+calvin.form = "canary";
+calvin.bestFriend = "Parot";
+break;
+    default: 
+calvin.form = "human boy";
+calvin.bestFriend = "Human Girl";
+break;
+}
+}
 
 
 
