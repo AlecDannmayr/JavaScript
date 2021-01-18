@@ -26,6 +26,12 @@
         addEventListener.('load') -- for full visual load
         .setTimeout() - sets a time limit from page load to event.
         'defined verible'.disabled = true; -- disaples button
+        .onClick() - event when clicked!
+        .innerHTML - add to place in js!
+        .new -- create new
+        Date() get a date on local machine or browser
+        toTimeString() turns date into string.
+
     </p>
 
     <script>
@@ -239,13 +245,37 @@
 					return; // escape fiunction
                 }
                 
+                parseEnt(document.getElementById("IdOfSomeSort").value, 10) || 0, // This sets a number or if a number isn't entered it sets it to 0! 10 is the radix value that gives it a sample number
+
+                document.querySelector('body').innerHTML // return all Html back of a webpage
+                document.querySelector('body').textContent // returns content with no html markup
+
+
+                // get a date
+
+                var aDate = new date();
+                var newDate = aDate.ToTimeString();
+                newDate.innerHtml('time')
+
+                // cut a string
+
+                var a = "String";
+                a.substr(1, 4); // Returns 'Stri'
+
+                // get part of time.
+
+                .getHours();
+                .getMinutes();
+                .getSeconds();
+                .getDays();
+
+
             //SanatizingData, removes strings that could be numbers 'two', into numbers
+
+
+            //toFixed(1) tofixed takes a number and rounds it to the nearest number indicated in braces and output the number as a string.
+
             //parseInt() -- parses as a number always.
-
-            parseEnt(document.getElementById("IdOfSomeSort").value, 10) || 0 // This sets a number or if a number isn't entered it sets it to 0! 10 is the radix value that gives it a sample number
-
-
-
 
 //arrow function not really safe to use yet because latest version of es6
 
