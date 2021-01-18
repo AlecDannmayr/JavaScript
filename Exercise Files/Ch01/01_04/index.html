@@ -24,7 +24,7 @@
         .focus() -- When submitted focuses on a section to show a value is needed.
         addEventListener.('DOMContentLoaded') -- when the dom has loaded but not full page content ie. images, you can use this to target the page before full visual load
         addEventListener.('load') -- for full visual load
-        .setTimeOut() - sets a time limit from page load to event.
+        .setTimeout() - sets a time limit from page load to event.
     </p>
 
     <script>
@@ -159,6 +159,14 @@
             myNumber.forEach(function (number) {
                 console.log("This is number ", number, " from my array");
             });
+
+            // setTimeout function
+
+            var setTime = function () {
+        alert("Time is out, please try again");
+      };
+
+      setTimeout(setTime, 2000);
 
 
 //arrow function not really safe to use yet because latest version of es6
