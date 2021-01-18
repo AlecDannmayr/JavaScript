@@ -237,7 +237,14 @@
 					alert("Please Enter a state"); // alert with message
 
 					return; // escape fiunction
-				}
+                }
+                
+            //SanatizingData, removes strings that could be numbers 'two', into numbers
+            //parseInt() -- parses as a number always.
+
+            parseEnt(document.getElementById("IdOfSomeSort").value, 10) || 0 // This sets a number or if a number isn't entered it sets it to 0! 10 is the radix value that gives it a sample number
+
+
 
 
 //arrow function not really safe to use yet because latest version of es6
