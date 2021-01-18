@@ -1,194 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
 </head>
+
 <body>
 
+    <p>
+        // .number()
+        .map()
+        typeof
+        .aurgument
+        .arguments.length()
+        .forEach()
+        .pop()
+        .length
+        .splice()
+        = [] - array
+        = {} - object
+        .focus() -- When submitted focuses on a section to show a value is needed.
+        addEventListener.('DOMContentLoaded') -- when the dom has loaded but not full page content ie. images, you can use this to target the page before full visual load
+        addEventListener.('load') -- for full visual load
+        .setTimeOut() - sets a time limit from page load to event.
+    </p>
 
-// .number() 
-.map()
-typeof
-.aurgument
-.arguments.length()
-.forEach()
-.pop()
-.length
-.splice()
-= [] - array
-=  {} - object
+    <script>
 
+        // Add numbers together using the argument property
 
+        var total = functionName(1, 2, 3, 4, 5, "Hello", "Hello2");
 
-<script>
+        function functionName() {
+            var sum = null;
 
-// Add numbers together using the argument property
+            for (i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
 
-var total = functionName(1,2,3,4,5, "Hello", "Hello2");
-
-function functionName() { 
-var sum = null; 
-
-for (i = 0; i < arguments.length; i++) {
-sum += arguments[i];
-}
-
-//
-
-
-// argument array like object
-
-function speakSomething(what, howMany) {
-what = (typeof what !== "undefined") ? what : "default speech"; 
-howMany = (typeof howMany !== "undefined") ? howMany : 10; 
-for (var i = 0; i < howMany; i += 1) {
-console.log(what + (" + i + "));
-}
-}
-speakSomething("Hey Hey", 5);
-
-// Math
-
-Math.random() // Creates random number between 0 > 1
-Math.floor // rounds down 
-
-// Objects referances and functions
+            //
 
 
+            // argument array like object
 
-var calvin = {
-name: "Calvin",
-form: "human boy"
-};
+            function speakSomething(what, howMany) {
+                what = (typeof what !== "undefined") ? what : "default speech";
+                howMany = (typeof howMany !== "undefined") ? howMany : 10;
+                for (var i = 0; i < howMany; i += 1) {
+                    console.log(what + (" + i + "));
+                }
+            }
+            speakSomething("Hey Hey", 5);
 
+            // Math
 
-function transmogrifier(calvin) {
-if (typeof calvin !== "object") {
-console.error("Argument is of the wrong type");
-return;
-}
-    var randomNumber = Math.floor(Math.random() * 5) + 1;
+            Math.random() // Creates random number between 0 > 1
+            Math.floor // rounds down 
 
-switch (randomNumber) {
-    case 1:
-calvin.form = "tyrannosaurus";
-calvin.bestFriend = "Raptor";
-break;
-    case 2:
-calvin.form = "grey wolf";
-calvin.bestFriend = "Black Wolf";
-break;
-    case 3: 
-calvin.form = "bengal tiger";
-calvin.bestFriend = "Black Tiger";
-break;
-    case 4:
-calvin.form = "grizzly bear";
-calvin.bestFriend = "Black bear";
-break;
-    case 5:
-calvin.form = "canary";
-calvin.bestFriend = "Parot";
-break;
-    default: 
-calvin.form = "human boy";
-calvin.bestFriend = "Human Girl";
-break;
-}
-}
-
-//types of functions 
-
-//Function expression
-
-function speakSomething(what) { 
-what = what || "Speaking!";
-
-for (i = 0; i < 100; i += 1) {
-console.log(what);
-}   
-    }
-speakSomething("Hellllllo")
-
-//Annonamous Function
-
-var SpeakSomethingElse = function(what) {
-what = what || "Speaking!";
-
-for (var i = 0; i < 10; i += 1) {
-console.log(what);
-}
-    };
-window.setTimeout(SpeakSomethingElse, 5000) 
+            // Objects referances and functions
 
 
-// Function as an object
+
+            var calvin = {
+                name: "Calvin",
+                form: "human boy"
+            };
 
 
-var obj = {
-sayHello: function() {
-console.log("Hello");
-}
-};
+            function transmogrifier(calvin) {
+                if (typeof calvin !== "object") {
+                    console.error("Argument is of the wrong type");
+                    return;
+                }
+                var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+                switch (randomNumber) {
+                    case 1:
+                        calvin.form = "tyrannosaurus";
+                        calvin.bestFriend = "Raptor";
+                        break;
+                    case 2:
+                        calvin.form = "grey wolf";
+                        calvin.bestFriend = "Black Wolf";
+                        break;
+                    case 3:
+                        calvin.form = "bengal tiger";
+                        calvin.bestFriend = "Black Tiger";
+                        break;
+                    case 4:
+                        calvin.form = "grizzly bear";
+                        calvin.bestFriend = "Black bear";
+                        break;
+                    case 5:
+                        calvin.form = "canary";
+                        calvin.bestFriend = "Parot";
+                        break;
+                    default:
+                        calvin.form = "human boy";
+                        calvin.bestFriend = "Human Girl";
+                        break;
+                }
+            }
+
+            //types of functions 
+
+            //Function expression
+
+            function speakSomething(what) {
+                what = what || "Speaking!";
+
+                for (i = 0; i < 100; i += 1) {
+                    console.log(what);
+                }
+            }
+            speakSomething("Hellllllo")
+
+            //Annonamous Function
+
+            var SpeakSomethingElse = function (what) {
+                what = what || "Speaking!";
+
+                for (var i = 0; i < 10; i += 1) {
+                    console.log(what);
+                }
+            };
+            window.setTimeout(SpeakSomethingElse, 5000)
 
 
-obj.sayHello();
-
-// .map() 
-// .map() takes a previous function as an argument (or a callback) and exicutes it and creates a new array.
+            // Function as an object
 
 
-function doubleIt(number) {
-return (number *10);
-}
+            var obj = {
+                sayHello: function () {
+                    console.log("Hello");
+                }
+            };
 
-var myNumber = [1,2,3,4,5];
-var doubleMyNumber = myNumber.map(doubleIt);
+
+            obj.sayHello();
+
+            // .map() 
+            // .map() takes a previous function as an argument (or a callback) and exicutes it and creates a new array.
 
 
-// .forEach()
-// .forEach() takes the values from the array and seperates and indicates everyone.
+            function doubleIt(number) {
+                return (number * 10);
+            }
 
-myNumber.forEach(function (number) {
-console.log("This is number ", number, " from my array");
-});
+            var myNumber = [1, 2, 3, 4, 5];
+            var doubleMyNumber = myNumber.map(doubleIt);
+
+
+            // .forEach()
+            // .forEach() takes the values from the array and seperates and indicates everyone.
+
+            myNumber.forEach(function (number) {
+                console.log("This is number ", number, " from my array");
+            });
 
 
 //arrow function not really safe to use yet because latest version of es6
 
-
-
 // aysyncarnouse code -- to skip steps and start later steps if doesn't need previous right away.
 
+
+
+// All new methods for calling informations from networks
 // callback
 // promises
 // await
 // async
 
+// Object Orientated programming is using an object as a parent structure of data that you can change specific items for.
+// child elements. oop you can call a certain instance and get a template of that instance to change and make a new copy.
+// This mecinisum works using protypeall inheritance, JavaScript works this way which is different from other programming languages.
 
+// programming langages can be loosly and strongly typed. 
+// javascript is loosly types which means veribles can be changed down the line, which makes it flexible but can make it buggy.
+// stricktly doesn't allow for these kind of changes and shows errors. TypeScript is a javascript language that allows for Stricter rules that's then complied into JavaScript.
+// Strickly forces what data can be put assigned to veribles. ie anumber entered into a verible that previously had a string will flash an error.
+// JavaScript is loosely and isn't strict about a verible storing multipul data types.
+// Other stricter languages like typescript 
 
+// modern javascript tooling
 
+// WebPage/rollUp - is dynamic imports and allows project loading for multi files.
+// npm/yarn - Package manager, making sure you download and have the correct javacript packages.
+// Babel - Transpiler or complier converts typescript or newer script from new es6 to es5 
 
-/* scope
-
-// Scope - Where varibles are defined.
-// Global scope veribles are accessible anywhere.
-// Local scope are only acessible as a local scope.
-
-// Global is not good to use. It;s handy as they're global but as they are in the global namespace they could intafeer with other scripts.
-// Global veribles can be modified by any other pieace of code that may not even be yours! 
-
-// "use strict" - doesn't allow for global scope veribles!
-// too avoide using global veribles always use far to make them local.
-// let and const handle scope differently, but var is good.
-
-//global in node = global
-// window = global else where
-// Let and const assisn to all blocks
-
-*/
+        /* scope
+        
+        // Scope - Where varibles are defined.
+        // Global scope veribles are accessible anywhere.
+        // Local scope are only acessible as a local scope.
+        
+        // Global is not good to use. It;s handy as they're global but as they are in the global namespace they could intafeer with other scripts.
+        // Global veribles can be modified by any other pieace of code that may not even be yours!
+        
+        // "use strict" - doesn't allow for global scope veribles!
+        // too avoide using global veribles always use far to make them local.
+        // let and const handle scope differently, but var is good.
+        
+        //global in node = global
+        // window = global else where
+        // Let and const assisn to all blocks
+        
+        */
 
 // Call back functions
 
@@ -200,8 +219,8 @@ console.log("This is number ", number, " from my array");
 
 
 
-</script>
-    
-</body>
-</html>
+    </script>
 
+</body>
+
+</html>

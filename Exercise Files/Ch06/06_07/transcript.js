@@ -63,19 +63,21 @@ return total;
 }
 
 
-function addingMachine() {  // creates function
-  var total = 0; // initalise a verible 'total' with value of 0
-       // varible i initialised equal to i, then for everytime arguments legnth is more then i incriment i by 1 
-  for (var i = 0; i < arguments.length; i += 1) { // arguments property creates an array and looks for length of array
-  var number = arguments[i]; // verible 'number = argument number
-  
-  if (typeof number === "number") {  // if number == a numrical number
-  total += number; // add totle and number together
-  }
-  }
+function addingMachine() {   // create a function with a function name and no parameters or arguments
+  var total = null;  // initalise a verible with a number or null
+      
+  for (var i = 0; i < arguments.length; i += 1) {  // cycle through a for loop, initalise i = 0, and for everytime the argument length (1,2,3) is more then 0 i ++
+  var number = arguments[i];  // initalise number, number == argument number (1) for first one.
+}
+  if (typeof number === "number") { 
+  total += number; 
+
   
   return total;
+
   }
+  }
+  conole.log(total);
   
   addingMachine(1,2,3);
 
