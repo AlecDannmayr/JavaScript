@@ -25,6 +25,7 @@
         addEventListener.('DOMContentLoaded') -- when the dom has loaded but not full page content ie. images, you can use this to target the page before full visual load
         addEventListener.('load') -- for full visual load
         .setTimeout() - sets a time limit from page load to event.
+        'defined verible'.disabled = true; -- disaples button
     </p>
 
     <script>
@@ -167,6 +168,76 @@
       };
 
       setTimeout(setTime, 2000);
+
+      //form submission button
+
+
+
+      document
+        .getElementById("cart-hplus") // get Id of form field
+        .addEventListener("submit", estimateTotal);
+
+      function estimateTotal(event) {
+        // declires a function 'event'
+        event.preventDefault(); // stops page from reloading
+        console.log("You submitted a form"); // console log
+
+        var state = document.getElementById("s-state"); // delacires a var what whatever document s-sate for select
+
+        if (state.value === "") {
+          // if state var is equal to nothing
+          alert("Please Enter a state"); // alert with message
+
+          return; // escape fiunction
+        }
+      }
+
+      // disable submit button
+
+      document.addEventListener("DOMContentLoaded", function () { // starts function before page load but after dom load
+        document
+          .getElementById("cart-hplus") // get Id of form field
+          .addEventListener("submit", estimateTotal); // listening for event and creates function
+
+        var btnEstimate = document.getElementById("btn-estimate"); // creates var = document id 
+
+        btnEstimate.disabled = true; // uses var to disable button true
+      });
+
+      // disable button when selected
+
+      function estimateTotal(event) {
+			// declires a function 'event'
+			event.preventDefault(); // stops page from reloading
+			console.log("You submitted a form"); // console log
+
+
+
+			document.addEventListener("DOMContentLoaded", function () {
+
+				var state = document.getElementById("s-state"); // delacires a var what whatever document s-sate for select
+
+				document
+					.getElementById("cart-hplus") // get Id of form field
+					.addEventListener("submit", estimateTotal);
+
+				var btnEstimate = document.getElementById("btn-estimate");
+
+
+				state.addEventListener("change", function () {
+					if (state.value === "") {
+						btnEstimate.disabled = true;
+					} else {
+						btnEstimate.disabled = false;
+					}
+				});
+
+				if (state.value === "") {
+					// if state var is equal to nothing
+					alert("Please Enter a state"); // alert with message
+
+					return; // escape fiunction
+				}
 
 
 //arrow function not really safe to use yet because latest version of es6
